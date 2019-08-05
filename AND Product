@@ -1,0 +1,8 @@
+long andProduct(long a, long b) {
+    long and=-1;
+for(long i=a;i<=b;i++)
+{
+    and=and&i;
+}
+return and;
+}
