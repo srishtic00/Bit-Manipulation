@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main()
+{
+    unsigned int n;
+    scanf("%u",&n);
+    int x=(n>>1)&(0x55555555);
+    int y=(n<<1)&(0xAAAAAAAA);
+    unsigned int res=x|y;
+    printf("%u",res);
+    return 0;
+}
