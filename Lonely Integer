@@ -1,0 +1,8 @@
+int lonelyinteger(int a_count, int* a) {
+int lonely=a[0];
+for(int i=1;i<a_count;i++)
+{
+lonely=lonely^a[i];
+}
+return lonely;
+}
